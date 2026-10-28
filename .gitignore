@@ -12,6 +12,8 @@
 
 # testing
 /coverage
+/.vite
+node_modules/.vite
 
 # next.js
 /.next/
@@ -19,6 +21,19 @@
 
 # production
 /build
+
+# database
+/prisma/dev.db
+/prisma/dev.db-journal
+/prisma/dev.db-wal
+/prisma/dev.db-shm
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# generated code
+/src/generated
 
 # misc
 .DS_Store
@@ -32,6 +47,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
